@@ -115,20 +115,6 @@ public extension MapView991 {
     }
 }
 
-public extension MapView991 {
-    struct MarkerColors {
-        /// Цвет маркера для кластера
-        let cluster: UIColor
-        /// Цвет маркера для обычной аннотации
-        let regular: UIColor
-
-        public init(cluster: UIColor = .orange, regular: UIColor = .red) {
-            self.cluster = cluster
-            self.regular = regular
-        }
-    }
-}
-
 private extension MapView991 {
     func addTrackingButtonIfNeeded(to mapView: MKMapView) {
         guard !mapView.subviews.contains(where: { $0 is MKUserTrackingButton }) else { return }
