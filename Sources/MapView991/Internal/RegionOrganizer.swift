@@ -5,6 +5,8 @@ struct RegionOrganizer {
     let new: MKCoordinateRegion
 
     /// Обновляет регион карты, если нужно
+    ///
+    /// Про тестирование: https://stackoverflow.com/a/51903928/11830041
     func updateRegionIfNeeded(for mapView: MKMapView) {
         let oldCoordinates = LocationCoordinates(old.center)
         let newCoordinates = LocationCoordinates(new.center)
